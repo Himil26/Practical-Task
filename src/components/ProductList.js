@@ -64,7 +64,9 @@ const ProductList = () => {
               <div className="col mb-5" key={product.id}> 
                 <div className="card h-100">
                   <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <div class="badge bg-danger text-white position-absolute mt-1 ms-1">Product</div>
+                  <div className="badge bg-danger text-white position-absolute mt-1 ms-1">
+                      {product.category}
+                    </div>
                     <img className="card-img-top" src={product.image} alt={product.title} width="450" height="300" />
                     <div className="card-body text-center">
                       <h5 className="card-title">{product.title}</h5>

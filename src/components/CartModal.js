@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 import '../styles/CartModal.css';
 
 const CartModal = ({ show, handleClose }) => {
-  const { cart, removeFromCart, clearCart, increaseQuantity, decreaseQuantity } = useCart();
+  const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
 
   const calculateSubtotal = (item) => {
     return item.price * item.quantity;

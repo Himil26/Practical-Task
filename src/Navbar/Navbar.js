@@ -15,23 +15,23 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
         <div className="container">
-          <a className="navbar-brand" href="">BShop</a>
+          <a className="navbar-brand" href="/">BShop</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="navbar-collapse collapse" id="navbarContent">
             <ul className="navbar-nav">
               <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">About</a></li>
+              <li className="nav-item"><a className="nav-link" href="/cart">About</a></li>
               <li className={`nav-item dropdown ${showDropdown ? 'show' : ''}`}>
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded={showDropdown} onClick={toggleDropdown}>Shop</a>
                 <ul className={`dropdown-menu ${showDropdown ? 'show' : ''}`}>
-                  <li><a className="dropdown-item" href="#">All Products</a></li>
+                  <li><a className="dropdown-item" href="/">All Products</a></li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  <li><a className="dropdown-item" href="#">Popular Items</a></li>
-                  <li><a className="dropdown-item" href="#">New Arrivals</a></li>
+                  <li><a className="dropdown-item" href="/">Popular Items</a></li>
+                  <li><a className="dropdown-item" href="/">New Arrivals</a></li>
                 </ul>
               </li>
             </ul>

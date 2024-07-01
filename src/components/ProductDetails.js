@@ -71,7 +71,7 @@ const ProductDetails = () => {
                             <Skeleton height={400} />
                         </div>
                         <div className="col-md-6">
-                            <div className="product-dtl">
+                            <div className="product-dtl">   
                                 <Skeleton height={30} width={300} />
                                 <Skeleton count={5} />
                                 <div className="row">
@@ -99,7 +99,7 @@ const ProductDetails = () => {
                                     <div className="item">
                                         <img
                                             src={product.image}
-                                            width='100%'
+                                            width='80%'
                                         />
                                     </div>
                                 </div>

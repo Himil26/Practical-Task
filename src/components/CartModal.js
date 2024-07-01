@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCart } from '../Context/CartContext'; 
+import { useCart } from '../Context/CartContext';
 import { Modal, Button } from 'react-bootstrap';
 import '../styles/CartModal.css';
 
 const CartModal = ({ show, handleClose }) => {
-  const { cart, removeFromCart, clearCart, increaseQuantity, decreaseQuantity } = useCart(); 
+  const { cart, removeFromCart, clearCart, increaseQuantity, decreaseQuantity } = useCart();
 
   const calculateSubtotal = (item) => {
     return item.price * item.quantity;
@@ -51,8 +51,8 @@ const CartModal = ({ show, handleClose }) => {
               ))}
             </div>
             <div className="cart-summary">
-            <div><h5><b>Summary</b></h5></div>
-            <hr></hr>
+              <div><h5><b>Summary</b></h5></div>
+              <hr></hr>
               <div className="summary-details">
                 <div className="summary-item">
                   <span className="text-muted">ITEMS {cart.length}</span>

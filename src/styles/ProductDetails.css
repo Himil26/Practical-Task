@@ -1,4 +1,4 @@
-.pd-wrap {
+/* .pd-wrap {
   padding: 40px 0;
   font-family: "Poppins", sans-serif;
 }
@@ -260,4 +260,142 @@
 .review-form .round-black-btn {
   text-transform: uppercase;
   cursor: pointer;
+} */
+
+.container {
+  margin-top: 20px;
+}
+
+.heading-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.product-dtl {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.product-info {
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reviews-counter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rate {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.product-price-discount {
+  font-size: 24px;
+  color: #ff523b;
+  margin-bottom: 20px;
+}
+
+.product-price-discount span {
+  margin-right: 10px;
+}
+
+.product-dtl p {
+  margin-bottom: 20px;
+}
+
+.product-count {
+  margin-top: 20px;
+}
+
+.product-count label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.product-count .display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.product-count .qty {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.product-count .qtyminus,
+.product-count .qtyplus {
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-count .qtyminus:hover,
+.product-count .qtyplus:hover {
+  background: #ccc;
+}
+
+.round-black-btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.round-black-btn:hover {
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .product-dtl {
+    padding: 20px;
+  }
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  .product-price-discount {
+    font-size: 20px;
+  }
+
+  .product-count .qty {
+    width: 40px;
+  }
+
+  .product-count .qtyminus,
+  .product-count .qtyplus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .round-black-btn {
+    padding: 8px 16px;
+  }
 }

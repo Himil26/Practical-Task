@@ -5,9 +5,11 @@ import CartModal from '../components/CartModal';
 const Navbar = () => {
   const { cart } = useCart();
   const [showCart, setShowCart] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const handleShowCart = () => setShowCart(true);
   const handleCloseCart = () => setShowCart(false);
+  const toggleDropdown = () => setShowDropdown(!showDropdown);
 
   return (
     <>
@@ -21,11 +23,13 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
               <li className="nav-item"><a className="nav-link" href="#">About</a></li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                <ul className="dropdown-menu">
+              <li className={`nav-item dropdown ${showDropdown ? 'show' : ''}`}>
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded={showDropdown} onClick={toggleDropdown}>Shop</a>
+                <ul className={`dropdown-menu ${showDropdown ? 'show' : ''}`}>
                   <li><a className="dropdown-item" href="#">All Products</a></li>
-                  <li><hr className="dropdown-divider" /></li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
                   <li><a className="dropdown-item" href="#">Popular Items</a></li>
                   <li><a className="dropdown-item" href="#">New Arrivals</a></li>
                 </ul>

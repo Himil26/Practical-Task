@@ -1,0 +1,41 @@
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-items {
+    flex: 2;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .cart-item {
+    margin-bottom: 20px;
+  }
+  
+  .quantity-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+  

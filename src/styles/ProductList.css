@@ -1,0 +1,60 @@
+.card {
+  transition: transform 0.2s;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.badge {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.skeleton {
+  background-color: #f0f0f0;
+}
+
+.skeleton-text {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-outline-dark {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #343a40;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 250px;
+  }
+}

@@ -279,10 +279,24 @@
 }
 
 .product-dtl {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  border-radius: 8px;
   margin-top: 20px;
-  background: #fff;
+}
+
+.product-dtl .form-control {
+	font-size: 15px;
+}
+.product-dtl label {
+	line-height: 16px;
+	font-size: 15px;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
 }
 
 .product-info {
@@ -327,7 +341,6 @@
 .product-count label {
   display: block;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
 .product-count .display-flex {
@@ -347,29 +360,46 @@
 .product-count .qtyplus {
   width: 30px;
   height: 30px;
-  background: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  background: #000; 
+  color: #fff;
+  margin: 0 5px;
 }
 
-.product-count .qtyminus:hover,
+.product-count .qtyminus {
+	border-radius: 3px 0 0 3px; 
+}
+.product-count .qtyplus {
+	border-radius: 0 3px 3px 0; 
+}
+
+/* .product-count .qtyminus:hover,
 .product-count .qtyplus:hover {
   background: #ccc;
-}
+} */
 
 .round-black-btn {
-  background: #333;
+  background: #212529;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
+  padding: 7px 45px;
+  border: solid 2px #212529; 
   cursor: pointer;
+  display: inline-block;
   margin-top: 20px;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out 0s;
 }
 
-.round-black-btn:hover {
-  background: #000;
+.round-black-btn:hover,
+.round-black-btn:focus {
+	background: transparent;
+	color: #212529;
+	text-decoration: none;
 }
 
 @media (max-width: 768px) {

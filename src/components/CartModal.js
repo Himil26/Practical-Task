@@ -34,9 +34,6 @@ const CartModal = ({ show, handleClose }) => {
                     <div className="item-category text-muted">{item.category}</div>
                     <div className="item-title">{item.title}</div>
                   </div>
-                  <div className="col-2 text-right">
-                    €{calculateSubtotal(item).toFixed(2)}
-                  </div>
                   <div className="col-2">
                     <div className="input-group quantity-group">
                       <button className="btn btn-outline-secondary btn-sm" onClick={() => decreaseQuantity(item.id)}>-</button>
@@ -44,7 +41,10 @@ const CartModal = ({ show, handleClose }) => {
                       <button className="btn btn-outline-secondary btn-sm" onClick={() => increaseQuantity(item.id)}>+</button>
                     </div>
                   </div>
-                  <div className="col-2 text-right">
+                  <div className="col-2">
+                    €{calculateSubtotal(item).toFixed(2)}
+                  </div>
+                  <div className="col-2">
                     <button className="btn btn-outline-danger btn-sm" onClick={() => removeFromCart(item.id)}>&#10005;</button>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const CartModal = ({ show, handleClose }) => {
                   <span>€{(parseFloat(calculateTotal()) + 5).toFixed(2)}</span>
                 </div>
               </div>
-              <Button variant="dark" className="checkout-btn">CHECKOUT</Button>
+              <Button variant="dark" className="checkout-btn ">CHECKOUT</Button>
             </div>
           </div>
         )}

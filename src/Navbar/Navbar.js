@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="navbar-collapse collapse" id="navbarContent">
             <ul className="navbar-nav">
               <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="/cart">About</a></li>
+              <li className="nav-item"><a className="nav-link" href="/">About</a></li>
               <li className={`nav-item dropdown ${showDropdown ? 'show' : ''}`}>
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded={showDropdown} onClick={toggleDropdown}>Shop</a>
                 <ul className={`dropdown-menu ${showDropdown ? 'show' : ''}`}>

@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/ProductDetails.css';
 
+
 const ProductDetails = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
@@ -100,6 +101,7 @@ const ProductDetails = () => {
                                         <img
                                             src={product.image}
                                             width='80%'
+                                            alt={product.title}
                                         />
                                     </div>
                                 </div>
@@ -131,7 +133,7 @@ const ProductDetails = () => {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <label htmlFor="size">Size</label>
-                                            <select id="size" name="size" className="form-control">
+                                            <select id="size" name="size" className="form-select">
                                                 <option>S</option>
                                                 <option>M</option>
                                                 <option>L</option>
@@ -140,7 +142,7 @@ const ProductDetails = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <label htmlFor="color">Color</label>
-                                            <select id="color" name="color" className="form-control">
+                                            <select id="color" name="color" className="form-select">
                                                 <option>Blue</option>
                                                 <option>Green</option>
                                                 <option>Red</option>
